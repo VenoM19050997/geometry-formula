@@ -51,6 +51,7 @@ public class GeometryClass {
         }
     }
 
+    //show option that user can use to choose geometry
     private static void showOption()
     {
         System.out.println("Generate Area/Perimeter/Circumference/Volume/Surface Area where applicable for the below." +"\n"+
@@ -69,6 +70,7 @@ public class GeometryClass {
         in.nextLine();
     }
 
+    //method to process and produce "square" area and perimeter from the value input by user
     private static void square()
     {
         System.out.println("Enter side (s): ");
@@ -86,6 +88,7 @@ public class GeometryClass {
                 "P = "+ (double)(4*s) +"\n");
     }
 
+    //method to process and produce "rectangle" area and perimeter from the value input by user
     private static void rectangle()
     {
         System.out.println("Enter length (l): ");
@@ -106,6 +109,7 @@ public class GeometryClass {
                 "P = "+ (double)((l+w)*2) +"\n");
     }
 
+    //method to process and produce "circle" area and circumference from the value input by user
     private static void circle()
     {
         System.out.println("Enter radius (r): ");
@@ -117,12 +121,12 @@ public class GeometryClass {
                 "A = 3.14*"+r+"^2"+"\n"+
                 "A = "+ (double)((Math.PI)*Math.pow(r,2)) +"\n");
 
-        System.out.println("Perimeter P" + "\n"+
-                "P = 2*pi*r"+"\n" +
-                "P = 2*3.14*"+r+"\n"+
-                "P = "+ (double)(2*Math.PI*r) +"\n");
+        System.out.println("Circumference C" + "\n"+
+                "C = 2*pi*r"+"\n" +
+                "C = 2*3.14*"+r+"\n"+
+                "C = "+ (double)(2*Math.PI*r) +"\n");
     }
-
+    //method to process and produce "triangle" area from the value input by user
     private static void triangle()
     {
         System.out.println("Enter base (b): ");
@@ -138,6 +142,7 @@ public class GeometryClass {
                 "A = "+ (double)(0.5*b*h) +"\n");
     }
 
+    //method to process and produce "trapezoid" area from the value input by user
     private static void trapezoid()
     {
         System.out.println("Enter base1 (b1): ");
@@ -156,6 +161,7 @@ public class GeometryClass {
                 "A = "+ (double)(0.5*(b1+b2)*h) +"\n");
     }
 
+    //method to process and produce "cube" volume and surface area from the value input by user
     private static void cube()
     {
         System.out.println("Enter side (s): ");
@@ -173,6 +179,7 @@ public class GeometryClass {
                 "SA = "+ (double)(6*Math.pow(s,2)) +"\n");
     }
 
+    //method to process and produce "cylinder" volume and surface area from the value input by user
     private static void cylinder()
     {
         System.out.println("Enter radius (r): ");
@@ -193,6 +200,7 @@ public class GeometryClass {
                 "SA = "+ (double)(2*Math.PI*r*(r+h)) +"\n");
     }
 
+    //method to process and produce "cone" volume and surface area from the value input by user
     private static void cone()
     {
         System.out.println("Enter radius (r): ");
@@ -216,6 +224,7 @@ public class GeometryClass {
                 "SA = "+ (double)(Math.PI*r*l) +"\n");
     }
 
+    //method to process and produce "sphere" volume and surface area from the value input by user
     private static void sphere()
     {
         System.out.println("Enter radius (r): ");
