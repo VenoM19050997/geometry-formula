@@ -65,7 +65,7 @@ public class GeometryClass {
                 "7. Cylinder" +"\n"+
                 "8. Cone" +"\n"+
                 "9. Sphere" +"\n"+
-                "Please choose: ");
+                "Please choose:: ");
         userOption = in.nextInt();
         in.nextLine();
     }
